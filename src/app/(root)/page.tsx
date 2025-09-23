@@ -27,7 +27,7 @@ export default function Home() {
               <MapPin /> {site.location}
             </div>
             <div className={"text-muted text-sm"}>{site.description}</div>
-            <Link href={`/${site.id}`}>
+            <Link href={`/sites/${site.id}`}>
               <Button className={"w-full"}>Accéder au site</Button>
             </Link>
           </div>
