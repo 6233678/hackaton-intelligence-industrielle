@@ -1,0 +1,258 @@
+[
+	{
+		"id": "site-001",
+		"uuid": "550e8400-e29b-41d4-a716-446655440001",
+		"name": "Usine de Montréal",
+		"description": "Usine principale de production d'assemblage et de finition, équipée de technologies CNC avancées et de systèmes robotisés de peinture.",
+		"location": "Montréal, Québec",
+		"departments": [
+			{
+				"id": "dep-001",
+				"uuid": "550e8400-e29b-41d4-a716-446655440011",
+				"name": "Assemblage",
+				"description": "Département spécialisé dans l'usinage de précision avec des tours CNC haute performance pour la fabrication de composants mécaniques.",
+				"machines": [
+					{
+						"id": "mach-001",
+						"uuid": "550e8400-e29b-41d4-a716-446655440111",
+						"name": "Tour CNC 1",
+						"status": "en ligne",
+						"uptimeHours": 3245,
+						"power_kw": 15,
+						"temperature_c": 68,
+						"alerts": [],
+						"production_units": 120000,
+						"energy_cost_cad": 8500,
+						"maintenance": {
+							"lastService": "2025-06-12",
+							"nextDue": "2025-12-12",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 2200,
+							"vibration": 0.02,
+							"history": [2100, 2150, 2200, 2190]
+						}
+					},
+					{
+						"id": "mach-002",
+						"uuid": "550e8400-e29b-41d4-a716-446655440112",
+						"name": "Tour CNC 2",
+						"status": "hors ligne",
+						"uptimeHours": 1876,
+						"power_kw": 12,
+						"temperature_c": 0,
+						"alerts": [
+							{
+								"id": "al-101",
+								"severity": "élevée",
+								"message": "Surchauffe de la broche"
+							}
+						],
+						"production_units": 85000,
+						"energy_cost_cad": 6200,
+						"maintenance": {
+							"lastService": "2025-02-18",
+							"nextDue": "2025-08-18",
+							"type": "corrective"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0,
+							"history": [1800, 1900, 0, 0]
+						}
+					}
+				]
+			},
+			{
+				"id": "dep-002",
+				"uuid": "550e8400-e29b-41d4-a716-446655440012",
+				"name": "Peinture",
+				"description": "Station automatisée de peinture utilisant des bras robotisés pour l'application de revêtements industriels de haute qualité.",
+				"machines": [
+					{
+						"id": "mach-003",
+						"uuid": "550e8400-e29b-41d4-a716-446655440113",
+						"name": "Bras robotisé peinture 1",
+						"status": "en ligne",
+						"uptimeHours": 4120,
+						"power_kw": 7,
+						"temperature_c": 55,
+						"alerts": [],
+						"production_units": 98000,
+						"energy_cost_cad": 4300,
+						"maintenance": {
+							"lastService": "2025-07-05",
+							"nextDue": "2026-01-05",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 150,
+							"vibration": 0.01,
+							"history": [145, 150, 155, 152]
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "site-002",
+		"uuid": "550e8400-e29b-41d4-a716-446655440002",
+		"name": "Usine de Québec",
+		"description": "Centre de production spécialisé dans le soudage industriel et la découpe laser de précision pour les composants métalliques.",
+		"location": "Ville de Québec, Québec",
+		"departments": [
+			{
+				"id": "dep-003",
+				"uuid": "550e8400-e29b-41d4-a716-446655440013",
+				"name": "Soudage",
+				"description": "Département équipé de stations de soudage haute capacité pour l'assemblage de structures métalliques complexes.",
+				"machines": [
+					{
+						"id": "mach-004",
+						"uuid": "550e8400-e29b-41d4-a716-446655440114",
+						"name": "Station de soudage A",
+						"status": "en ligne",
+						"uptimeHours": 2920,
+						"power_kw": 25,
+						"temperature_c": 75,
+						"alerts": [],
+						"production_units": 135000,
+						"energy_cost_cad": 10200,
+						"maintenance": {
+							"lastService": "2025-05-20",
+							"nextDue": "2025-11-20",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0.03,
+							"history": [0, 0, 0, 0]
+						}
+					}
+				]
+			},
+			{
+				"id": "dep-004",
+				"uuid": "550e8400-e29b-41d4-a716-446655440014",
+				"name": "Découpe",
+				"description": "Section de découpe laser ultra-précise pour la fabrication de pièces métalliques sur mesure avec des tolérances serrées.",
+				"machines": [
+					{
+						"id": "mach-005",
+						"uuid": "550e8400-e29b-41d4-a716-446655440115",
+						"name": "Découpeuse laser 1",
+						"status": "en ligne",
+						"uptimeHours": 5200,
+						"power_kw": 30,
+						"temperature_c": 90,
+						"alerts": [
+							{
+								"id": "al-202",
+								"severity": "moyenne",
+								"message": "Remplacement du filtre requis"
+							}
+						],
+						"production_units": 190000,
+						"energy_cost_cad": 14500,
+						"maintenance": {
+							"lastService": "2025-03-01",
+							"nextDue": "2025-09-01",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0.05,
+							"history": [0, 0, 0, 0]
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "site-003",
+		"uuid": "550e8400-e29b-41d4-a716-446655440003",
+		"name": "Usine de Trois-Rivières",
+		"description": "Installation industrielle dédiée au formage et à l'estampage de métaux lourds avec des presses hydrauliques haute puissance.",
+		"location": "Trois-Rivières, Québec",
+		"departments": [
+			{
+				"id": "dep-005",
+				"uuid": "550e8400-e29b-41d4-a716-446655440015",
+				"name": "Estampage",
+				"description": "Département de formage métallique utilisant des presses hydrauliques pour la production de pièces estampées de grande série.",
+				"machines": [
+					{
+						"id": "mach-006",
+						"uuid": "550e8400-e29b-41d4-a716-446655440116",
+						"name": "Presse d’estampage 1",
+						"status": "hors ligne",
+						"uptimeHours": 3890,
+						"power_kw": 50,
+						"temperature_c": 0,
+						"alerts": [
+							{
+								"id": "al-303",
+								"severity": "élevée",
+								"message": "Défaillance hydraulique"
+							}
+						],
+						"production_units": 150000,
+						"energy_cost_cad": 18700,
+						"maintenance": {
+							"lastService": "2025-01-22",
+							"nextDue": "2025-07-22",
+							"type": "corrective"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0,
+							"history": [500, 520, 0, 0]
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "site-004",
+		"uuid": "550e8400-e29b-41d4-a716-446655440004",
+		"name": "Usine de Saguenay",
+		"description": "Usine de conditionnement et d'emballage final équipée de lignes automatisées pour la préparation des produits finis.",
+		"location": "Saguenay, Québec",
+		"departments": [
+			{
+				"id": "dep-006",
+				"uuid": "550e8400-e29b-41d4-a716-446655440016",
+				"name": "Emballage",
+				"description": "Ligne de production automatisée pour l'emballage, l'étiquetage et la préparation des commandes clients.",
+				"machines": [
+					{
+						"id": "mach-007",
+						"uuid": "550e8400-e29b-41d4-a716-446655440117",
+						"name": "Ligne d’emballage 1",
+						"status": "en ligne",
+						"uptimeHours": 6000,
+						"power_kw": 18,
+						"temperature_c": 62,
+						"alerts": [],
+						"production_units": 210000,
+						"energy_cost_cad": 9900,
+						"maintenance": {
+							"lastService": "2025-06-30",
+							"nextDue": "2026-01-30",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 300,
+							"vibration": 0.02,
+							"history": [290, 295, 300, 298]
+						}
+					}
+				]
+			}
+		]
+	}
+]

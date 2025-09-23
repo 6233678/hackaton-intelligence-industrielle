@@ -2,11 +2,12 @@
 @import "tw-animate-css";
 
 :root {
-    --primary: oklch(0.205 0 0);
+    --primary: oklch(0.5987 0.22 257.83);
+    --primary-hover: oklch(0.6693 0.177267 256.5536);
     --radius: 0.625rem;
-    --background: oklch(0.1608 0.0091 240.59);
-    --foreground: oklch(0.215 0.0165 252.5);
-    --card: oklch(0.215 0.0165 252.5);
+    --background: oklch(0.215 0.0165 252.5);
+    --foreground: oklch(0.2613 0.0221 254.21);
+    --card: oklch(0.2613 0.0221 254.21);
     --card-foreground: oklch(0.145 0 0);
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.145 0 0);
@@ -64,6 +65,7 @@
     --color-secondary: var(--secondary);
     --color-primary-foreground: var(--primary-foreground);
     --color-primary: var(--primary);
+    --color-primary-hover: var(--primary-hover);
     --color-popover-foreground: var(--popover-foreground);
     --color-popover: var(--popover);
     --color-card-foreground: var(--card-foreground);
