@@ -16,7 +16,7 @@
 						"id": "mach-001",
 						"uuid": "550e8400-e29b-41d4-a716-446655440111",
 						"name": "Tour CNC 1",
-						"status": "en ligne",
+						"status": true,
 						"uptimeHours": 3245,
 						"power_kw": 15,
 						"temperature_c": 68,
@@ -38,7 +38,7 @@
 						"id": "mach-002",
 						"uuid": "550e8400-e29b-41d4-a716-446655440112",
 						"name": "Tour CNC 2",
-						"status": "hors ligne",
+						"status": false,
 						"uptimeHours": 1876,
 						"power_kw": 12,
 						"temperature_c": 0,
@@ -61,6 +61,56 @@
 							"vibration": 0,
 							"history": [1800, 1900, 0, 0]
 						}
+					},
+					{
+						"id": "mach-008",
+						"uuid": "550e8400-e29b-41d4-a716-446655440118",
+						"name": "Fraiseuse CNC 1",
+						"status": true,
+						"uptimeHours": 2890,
+						"power_kw": 18,
+						"temperature_c": 72,
+						"alerts": [],
+						"production_units": 95000,
+						"energy_cost_cad": 7200,
+						"maintenance": {
+							"lastService": "2025-04-15",
+							"nextDue": "2025-10-15",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 1800,
+							"vibration": 0.03,
+							"history": [1750, 1800, 1820, 1800]
+						}
+					},
+					{
+						"id": "mach-009",
+						"uuid": "550e8400-e29b-41d4-a716-446655440119",
+						"name": "Centre d'usinage 1",
+						"status": true,
+						"uptimeHours": 4200,
+						"power_kw": 22,
+						"temperature_c": 75,
+						"alerts": [
+							{
+								"id": "al-401",
+								"severity": "faible",
+								"message": "Niveau de lubrifiant bas"
+							}
+						],
+						"production_units": 110000,
+						"energy_cost_cad": 9100,
+						"maintenance": {
+							"lastService": "2025-06-01",
+							"nextDue": "2025-12-01",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 2500,
+							"vibration": 0.025,
+							"history": [2480, 2500, 2520, 2510]
+						}
 					}
 				]
 			},
@@ -74,7 +124,7 @@
 						"id": "mach-003",
 						"uuid": "550e8400-e29b-41d4-a716-446655440113",
 						"name": "Bras robotisé peinture 1",
-						"status": "en ligne",
+						"status": true,
 						"uptimeHours": 4120,
 						"power_kw": 7,
 						"temperature_c": 55,
@@ -90,6 +140,50 @@
 							"rpm": 150,
 							"vibration": 0.01,
 							"history": [145, 150, 155, 152]
+						}
+					},
+					{
+						"id": "mach-010",
+						"uuid": "550e8400-e29b-41d4-a716-446655440120",
+						"name": "Bras robotisé peinture 2",
+						"status": true,
+						"uptimeHours": 3750,
+						"power_kw": 8,
+						"temperature_c": 58,
+						"alerts": [],
+						"production_units": 89000,
+						"energy_cost_cad": 4600,
+						"maintenance": {
+							"lastService": "2025-05-10",
+							"nextDue": "2025-11-10",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 160,
+							"vibration": 0.015,
+							"history": [155, 160, 165, 158]
+						}
+					},
+					{
+						"id": "mach-011",
+						"uuid": "550e8400-e29b-41d4-a716-446655440121",
+						"name": "Cabine de séchage 1",
+						"status": true,
+						"uptimeHours": 5100,
+						"power_kw": 35,
+						"temperature_c": 180,
+						"alerts": [],
+						"production_units": 125000,
+						"energy_cost_cad": 12800,
+						"maintenance": {
+							"lastService": "2025-03-20",
+							"nextDue": "2025-09-20",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0.005,
+							"history": [0, 0, 0, 0]
 						}
 					}
 				]
@@ -113,7 +207,7 @@
 						"id": "mach-004",
 						"uuid": "550e8400-e29b-41d4-a716-446655440114",
 						"name": "Station de soudage A",
-						"status": "en ligne",
+						"status": true,
 						"uptimeHours": 2920,
 						"power_kw": 25,
 						"temperature_c": 75,
@@ -130,6 +224,56 @@
 							"vibration": 0.03,
 							"history": [0, 0, 0, 0]
 						}
+					},
+					{
+						"id": "mach-012",
+						"uuid": "550e8400-e29b-41d4-a716-446655440122",
+						"name": "Station de soudage B",
+						"status": true,
+						"uptimeHours": 3180,
+						"power_kw": 28,
+						"temperature_c": 78,
+						"alerts": [],
+						"production_units": 142000,
+						"energy_cost_cad": 11200,
+						"maintenance": {
+							"lastService": "2025-07-10",
+							"nextDue": "2026-01-10",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0.04,
+							"history": [0, 0, 0, 0]
+						}
+					},
+					{
+						"id": "mach-013",
+						"uuid": "550e8400-e29b-41d4-a716-446655440123",
+						"name": "Robot de soudage 1",
+						"status": false,
+						"uptimeHours": 2450,
+						"power_kw": 32,
+						"temperature_c": 0,
+						"alerts": [
+							{
+								"id": "al-501",
+								"severity": "élevée",
+								"message": "Erreur de calibrage bras robotisé"
+							}
+						],
+						"production_units": 87000,
+						"energy_cost_cad": 9800,
+						"maintenance": {
+							"lastService": "2025-02-28",
+							"nextDue": "2025-08-28",
+							"type": "corrective"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0,
+							"history": [45, 50, 0, 0]
+						}
 					}
 				]
 			},
@@ -143,7 +287,7 @@
 						"id": "mach-005",
 						"uuid": "550e8400-e29b-41d4-a716-446655440115",
 						"name": "Découpeuse laser 1",
-						"status": "en ligne",
+						"status": true,
 						"uptimeHours": 5200,
 						"power_kw": 30,
 						"temperature_c": 90,
@@ -164,6 +308,56 @@
 						"telemetry": {
 							"rpm": 0,
 							"vibration": 0.05,
+							"history": [0, 0, 0, 0]
+						}
+					},
+					{
+						"id": "mach-014",
+						"uuid": "550e8400-e29b-41d4-a716-446655440124",
+						"name": "Découpeuse plasma 1",
+						"status": true,
+						"uptimeHours": 4650,
+						"power_kw": 40,
+						"temperature_c": 95,
+						"alerts": [
+							{
+								"id": "al-601",
+								"severity": "moyenne",
+								"message": "Usure des électrodes détectée"
+							}
+						],
+						"production_units": 165000,
+						"energy_cost_cad": 16200,
+						"maintenance": {
+							"lastService": "2025-04-05",
+							"nextDue": "2025-10-05",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0.06,
+							"history": [0, 0, 0, 0]
+						}
+					},
+					{
+						"id": "mach-015",
+						"uuid": "550e8400-e29b-41d4-a716-446655440125",
+						"name": "Cisaille hydraulique 1",
+						"status": true,
+						"uptimeHours": 3820,
+						"power_kw": 45,
+						"temperature_c": 68,
+						"alerts": [],
+						"production_units": 178000,
+						"energy_cost_cad": 15900,
+						"maintenance": {
+							"lastService": "2025-06-15",
+							"nextDue": "2025-12-15",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0.08,
 							"history": [0, 0, 0, 0]
 						}
 					}
@@ -188,7 +382,7 @@
 						"id": "mach-006",
 						"uuid": "550e8400-e29b-41d4-a716-446655440116",
 						"name": "Presse d’estampage 1",
-						"status": "hors ligne",
+						"status": false,
 						"uptimeHours": 3890,
 						"power_kw": 50,
 						"temperature_c": 0,
@@ -210,6 +404,56 @@
 							"rpm": 0,
 							"vibration": 0,
 							"history": [500, 520, 0, 0]
+						}
+					},
+					{
+						"id": "mach-016",
+						"uuid": "550e8400-e29b-41d4-a716-446655440126",
+						"name": "Presse d'estampage 2",
+						"status": true,
+						"uptimeHours": 4200,
+						"power_kw": 55,
+						"temperature_c": 85,
+						"alerts": [],
+						"production_units": 175000,
+						"energy_cost_cad": 21200,
+						"maintenance": {
+							"lastService": "2025-05-08",
+							"nextDue": "2025-11-08",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0.12,
+							"history": [480, 500, 520, 510]
+						}
+					},
+					{
+						"id": "mach-017",
+						"uuid": "550e8400-e29b-41d4-a716-446655440127",
+						"name": "Presse de formage 1",
+						"status": true,
+						"uptimeHours": 3650,
+						"power_kw": 38,
+						"temperature_c": 72,
+						"alerts": [
+							{
+								"id": "al-701",
+								"severity": "faible",
+								"message": "Pression hydraulique légèrement basse"
+							}
+						],
+						"production_units": 132000,
+						"energy_cost_cad": 16800,
+						"maintenance": {
+							"lastService": "2025-03-12",
+							"nextDue": "2025-09-12",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0.09,
+							"history": [350, 380, 390, 385]
 						}
 					}
 				]
@@ -233,7 +477,7 @@
 						"id": "mach-007",
 						"uuid": "550e8400-e29b-41d4-a716-446655440117",
 						"name": "Ligne d’emballage 1",
-						"status": "en ligne",
+						"status": true,
 						"uptimeHours": 6000,
 						"power_kw": 18,
 						"temperature_c": 62,
@@ -249,6 +493,78 @@
 							"rpm": 300,
 							"vibration": 0.02,
 							"history": [290, 295, 300, 298]
+						}
+					},
+					{
+						"id": "mach-018",
+						"uuid": "550e8400-e29b-41d4-a716-446655440128",
+						"name": "Machine d'étiquetage 1",
+						"status": true,
+						"uptimeHours": 5800,
+						"power_kw": 12,
+						"temperature_c": 58,
+						"alerts": [],
+						"production_units": 245000,
+						"energy_cost_cad": 7800,
+						"maintenance": {
+							"lastService": "2025-07-02",
+							"nextDue": "2026-01-02",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 450,
+							"vibration": 0.018,
+							"history": [440, 445, 450, 448]
+						}
+					},
+					{
+						"id": "mach-019",
+						"uuid": "550e8400-e29b-41d4-a716-446655440129",
+						"name": "Convoyeur principal",
+						"status": true,
+						"uptimeHours": 6500,
+						"power_kw": 25,
+						"temperature_c": 45,
+						"alerts": [],
+						"production_units": 280000,
+						"energy_cost_cad": 11200,
+						"maintenance": {
+							"lastService": "2025-04-20",
+							"nextDue": "2025-10-20",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 60,
+							"vibration": 0.01,
+							"history": [58, 60, 62, 60]
+						}
+					},
+					{
+						"id": "mach-020",
+						"uuid": "550e8400-e29b-41d4-a716-446655440130",
+						"name": "Palettiseur robotisé 1",
+						"status": false,
+						"uptimeHours": 4800,
+						"power_kw": 35,
+						"temperature_c": 0,
+						"alerts": [
+							{
+								"id": "al-801",
+								"severity": "moyenne",
+								"message": "Maintenance programmée en cours"
+							}
+						],
+						"production_units": 195000,
+						"energy_cost_cad": 13500,
+						"maintenance": {
+							"lastService": "2025-07-15",
+							"nextDue": "2026-01-15",
+							"type": "préventive"
+						},
+						"telemetry": {
+							"rpm": 0,
+							"vibration": 0,
+							"history": [120, 125, 0, 0]
 						}
 					}
 				]
