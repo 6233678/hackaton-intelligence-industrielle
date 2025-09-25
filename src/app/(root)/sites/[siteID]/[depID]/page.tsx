@@ -30,6 +30,20 @@ export default async function Department(props: {
 
   if (!dep) return notFound();
 
+  // Calculate department statistics
+  const totalMachines = dep.machines.length;
+  const activeMachines = dep.machines.filter(
+    (machine) => machine.status,
+  ).length;
+  const totalProduction = dep.machines.reduce(
+    (sum, machine) => sum + machine.production_units,
+    0,
+  );
+  const totalEnergyCost = dep.machines.reduce(
+    (sum, machine) => sum + machine.energy_cost_cad,
+    0,
+  );
+
   return (
     <div className={"flex flex-col gap-8"}>
       <div className={"flex gap-2 flex-col"}>
@@ -60,6 +74,29 @@ export default async function Department(props: {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
+
+      <div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"}>
+        <div className={"bg-card rounded-lg p-4 flex flex-col gap-2"}>
+          <h3 className={"font-semibold text-lg"}>Machines Totales</h3>
+          <p className={"text-3xl font-bold"}>{totalMachines}</p>
+        </div>
+        <div className={"bg-card rounded-lg p-4 flex flex-col gap-2"}>
+          <h3 className={"font-semibold text-lg"}>Machines Actives</h3>
+          <p className={"text-3xl font-bold"}>{activeMachines}</p>
+        </div>
+        <div className={"bg-card rounded-lg p-4 flex flex-col gap-2"}>
+          <h3 className={"font-semibold text-lg"}>Production Totale</h3>
+          <p className={"text-3xl font-bold"}>
+            {totalProduction.toLocaleString()}
+          </p>
+        </div>
+        <div className={"bg-card rounded-lg p-4 flex flex-col gap-2"}>
+          <h3 className={"font-semibold text-lg"}>Coût Énergétique</h3>
+          <p className={"text-3xl font-bold"}>
+            {totalEnergyCost.toLocaleString()} CAD
+          </p>
+        </div>
+      </div>
 
       <div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"}>
         {dep.machines.map((machine) => (
