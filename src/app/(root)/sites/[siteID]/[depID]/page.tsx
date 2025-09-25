@@ -1,6 +1,6 @@
 import sites from "@/data/sites.json";
 import Link from "next/link";
-import { Users } from "lucide-react";
+import { Activity, TrendingUp, Users, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { notFound } from "next/navigation";
 import {
@@ -77,21 +77,33 @@ export default async function Department(props: {
 
       <div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"}>
         <div className={"bg-card rounded-lg p-4 flex flex-col gap-2"}>
-          <h3 className={"font-semibold text-lg"}>Machines Totales</h3>
+          <div className={"flex items-center gap-2"}>
+            <Activity className={"h-5 w-5 text-primary"} />
+            <h3 className={"font-semibold text-lg"}>Machines Totales</h3>
+          </div>
           <p className={"text-3xl font-bold"}>{totalMachines}</p>
         </div>
         <div className={"bg-card rounded-lg p-4 flex flex-col gap-2"}>
-          <h3 className={"font-semibold text-lg"}>Machines Actives</h3>
+          <div className={"flex items-center gap-2"}>
+            <Activity className={"h-5 w-5 text-primary"} />
+            <h3 className={"font-semibold text-lg"}>Machines Actives</h3>
+          </div>
           <p className={"text-3xl font-bold"}>{activeMachines}</p>
         </div>
         <div className={"bg-card rounded-lg p-4 flex flex-col gap-2"}>
-          <h3 className={"font-semibold text-lg"}>Production Totale</h3>
+          <div className={"flex items-center gap-2"}>
+            <TrendingUp className={"h-5 w-5 text-primary"} />
+            <h3 className={"font-semibold text-lg"}>Production Totale</h3>
+          </div>
           <p className={"text-3xl font-bold"}>
             {totalProduction.toLocaleString()}
           </p>
         </div>
         <div className={"bg-card rounded-lg p-4 flex flex-col gap-2"}>
-          <h3 className={"font-semibold text-lg"}>Coût Énergétique</h3>
+          <div className={"flex items-center gap-2"}>
+            <Zap className={"h-5 w-5 text-primary"} />
+            <h3 className={"font-semibold text-lg"}>Coût Énergétique</h3>
+          </div>
           <p className={"text-3xl font-bold"}>
             {totalEnergyCost.toLocaleString()} CAD
           </p>

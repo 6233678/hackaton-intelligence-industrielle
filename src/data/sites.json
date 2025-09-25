@@ -45,7 +45,7 @@
 						"alerts": [
 							{
 								"id": "al-101",
-								"severity": "élevée",
+								"severity": "HIGH",
 								"message": "Surchauffe de la broche"
 							}
 						],
@@ -95,7 +95,7 @@
 						"alerts": [
 							{
 								"id": "al-401",
-								"severity": "faible",
+								"severity": "LOW",
 								"message": "Niveau de lubrifiant bas"
 							}
 						],
@@ -258,7 +258,7 @@
 						"alerts": [
 							{
 								"id": "al-501",
-								"severity": "élevée",
+								"severity": "HIGH",
 								"message": "Erreur de calibrage bras robotisé"
 							}
 						],
@@ -294,7 +294,7 @@
 						"alerts": [
 							{
 								"id": "al-202",
-								"severity": "moyenne",
+								"severity": "MEDIUM",
 								"message": "Remplacement du filtre requis"
 							}
 						],
@@ -322,7 +322,7 @@
 						"alerts": [
 							{
 								"id": "al-601",
-								"severity": "moyenne",
+								"severity": "MEDIUM",
 								"message": "Usure des électrodes détectée"
 							}
 						],
@@ -389,7 +389,7 @@
 						"alerts": [
 							{
 								"id": "al-303",
-								"severity": "élevée",
+								"severity": "HIGH",
 								"message": "Défaillance hydraulique"
 							}
 						],
@@ -439,7 +439,7 @@
 						"alerts": [
 							{
 								"id": "al-701",
-								"severity": "faible",
+								"severity": "LOW",
 								"message": "Pression hydraulique légèrement basse"
 							}
 						],
@@ -550,7 +550,7 @@
 						"alerts": [
 							{
 								"id": "al-801",
-								"severity": "moyenne",
+								"severity": "MEDIUM",
 								"message": "Maintenance programmée en cours"
 							}
 						],
