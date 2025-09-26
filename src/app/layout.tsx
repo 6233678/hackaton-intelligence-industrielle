@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 const poppins = Poppins({
   subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
